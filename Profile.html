@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="MNavbar.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="Profile/Profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO<div class="dot">.</div></div>
+            <ul class="navItems">
+                <li class="NBh"><a href="index.html">Home<i class="fa fa-home"></i></a></li>
+                <li class="NBp"><a href="#prof">Profile<i class="fa fa-user"></i></a></li>
+                <li class="NBa"><a href="Activities.html">Actitivities<i class="fa fa-gamepad"></i></a></li>
+                <li class="NBc"><a href="Certificates.html">Certificates<i class="fa fa-certificate"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="shootingS">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="imgBox">
+            <img src="img/ME.png" class="img1">
+            <img src="img/HEarth.png" class="img2">
+            <img src="img/Stars.png" class="Stars">
+        </div>
+        <div class="textBox">
+            <div class="textBox1" id="textBox1">
+                <div class="TInfo">
+                    <h1>ABOUTME</h1>
+                    <h3>FULLNAME : Phonvarit Watthanahemmarat</h3>
+                    <h3>NICKNAME : Max</h3>
+                    <h3>BORN : 16 Aug 2005</h3>
+                    <h3>AGE : 18</h3>
+                </div>
+            </div>
+            <div class="textBox2" id="textBox2">
+                    <div class="TEdu">
+                        <h1>EDUCATION</h1>
+                        <div class="KornSch">
+                            <img src="img/Korn.png">
+                            <h4>Kornpitack School</h4>
+                        </div>
+                        <div class="PotiSch">
+                            <img src="img/Poti.png">
+                            <h4>Potisarnpittayakorn School</h4>
+                            <h5>GPAX : 3.58 Branch : SCI-COM</h5>
+                            <button><a href="https://www.ps.ac.th/psth/" target="_blank">School Address</a></button>
+                        </div>
+                    </div>
+            </div>
+            <div class="textBox3" id="textBox3">
+                <div class="TSkill">
+                    <h1>SKILLS</h1>
+                    <ul>
+                        <li>C++</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>HTML</li>
+                        <li>MYSQL</li>
+                        <li>PYTHON</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/Prof.png" class="Info" onclick="Text1()"></li>
+            <li><img src="img/Edu.png" class="Edu" onclick="Text2()"></li>
+            <li><img src="img/Skills.png" class="Skill" onclick="Text3()"></li>
+        </ul>
+    </section>
+
+    <script>
+        function Text1() {
+          var x = document.getElementById('textBox1');
+          if (x.style.visibility === 'hidden') {
+            x.style.visibility = 'visible';
+          } 
+          else {
+            x.style.visibility = 'hidden';
+          }
+        }
+        function Text2() {
+          var y = document.getElementById('textBox2');
+          if (y.style.visibility === 'hidden') {
+            y.style.visibility = 'visible';
+          } 
+          else {
+            y.style.visibility = 'hidden';
+          }
+        }
+        function Text3() {
+          var z = document.getElementById('textBox3');
+          if (z.style.visibility === 'hidden') {
+            z.style.visibility = 'visible';
+          } 
+          else {
+            z.style.visibility = 'hidden';
+          }
+        }
+    </script>
+</body>
+</html>

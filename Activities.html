@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="MNavbar.css">
+    <link rel="stylesheet" href="Index/Textappear copy.css">
+    <link rel="stylesheet" href="Activities/ActivitiesDecorate.css">
+    <link rel="stylesheet" href="Activities/Activities.css">
+    <link rel="stylesheet" href="Activities/ActSlide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO<div class="dot">.</div></div>
+            <ul class="navItems">
+                <li class="NBh"><a href="index.html">Home<i class="fa fa-home"></i></a></li>
+                <li class="NBp"><a href="Profile.html">Profile<i class="fa fa-user"></i></a></li>
+                <li class="NBa"><a href="#Act">Actitivities<i class="fa fa-gamepad"></i></a></li>
+                <li class="NBc"><a href="Certificates.html">Certificates<i class="fa fa-certificate"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="shootingS">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="imgBox">
+            <img src="img/Stars.png" class="Stars">
+            <img src="img/Moon.png" class="Moon">
+            <img src="img/Earth.png" class="Earth">
+        </div>
+        <div class="Activities">
+            <h1 class="text">ACTIVITIES</h1>
+            <div class="imgActBox">
+                <img src="img/Rock.png" id="Rock1">
+                <img src="img/Rock.png" id="Rock2">
+            </div>
+            <div class="ActivitiesPic">
+                <div class="textActBox">
+                    <div class="textActBox1">
+                        <div class="imgActBox1">
+                            <img src="img/CSWE1.jpg">
+                        </div>
+                        <div class="textBox1">
+                            <h1>CSWE 1st</h1>
+                            <h4>เป็นกิจกรรมที่พวกเราได้สร้างเว็บไซต์<br>สำหรับแผนการเรียนวิทย์คอมให้กับทางโรงเรียน</h4>
+                        </div>
+                    </div>
+                    <div class="textActBox2">
+                        <div class="imgActBox2">
+                            <img src="img/COMPRO1.jpg">
+                        </div>
+                        <div class="textBox2">
+                            <h1>Computer Project</h1>
+                            <h4>เป็นกิจกรรมที่ผมได้เป็นหนึ่งในตัวแทน<br>สำหรับการไปแข่งขันประกวดโครงงานคอมพิวเตอร์</h4>
+                        </div>
+                    </div>
+                    <div class="textActBox3">
+                        <div class="imgActBox3">
+                            <img src="img/KMUTT1.JPG">
+                        </div>
+                        <div class="textBox3">
+                            <h1>KMUTT OPEN HOUSE 2022</h1>
+                            <h4>ผมได้เข้าร่วมกิจกรรมการเปิดบ้าน<br>ซึ่งถูกจัดโดยมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</h4>
+                        </div>
+                    </div>
+                    <div class="textActBox4">
+                        <div class="imgActBox4">
+                            <img src="img/MU1.jpg">
+                        </div>
+                        <div class="textBox4">
+                            <h1>MU OPEN HOUSE 2022</h1>
+                            <h4>ผมได้เข้าร่วมกิจกรรมการเปิดบ้าน<br>ซึ่งถูกจัดขึ้นโดยมหาวิทยาลัยมหิดล</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let Rocket1 = document.getElementById('Rock1');
+        let Rocket2 = document.getElementById('Rock2');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            Rocket1.style.marginLeft = value * 4 + 'px';
+            Rocket2.style.marginRight = value * 3 + 'px';
+        })
+    </script>
+</body>
+</html>

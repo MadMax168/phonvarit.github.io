@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="MNavbar.css">
+    <link rel="stylesheet" href="Load.css">
+    <link rel="stylesheet" href="Index/Index.css">
+    <link rel="stylesheet" href="Index/welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="welcome">
+        <div class="Loader">
+            <img src="img/Loading.gif" loop="infinite">
+            <h1>LOADING <p data-load="...">...</p> </h1>
+        </div>
+        <header>
+            <nav>
+                <div class="logo">PORTFOLIO<div class="dot">.</div></div>
+                <ul class="navItems">
+                    <li class="NBh"><a href="#home">Home<i class="fa fa-home"></i></a></li>
+                    <li class="NBp"><a href="Profile.html">Profile<i class="fa fa-user"></i></a></li>
+                    <li class="NBa"><a href="Activities.html">Actitivities<i class="fa fa-gamepad"></i></a></li>
+                    <li class="NBc"><a href="Certificates.html">Certificates<i class="fa fa-certificate"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="Textf" id="Textf">WELCOME <br> TO <br> MY PORTFOLIO</h1>
+        <img src="img/Sun.png" class="Sun">
+        <img src="img/Moon.png" class="Moon">
+        <img src="img/Earth.png" class="Earth">
+        <img src="img/Venus.png" class="Venus">
+        <img src="img/Stars.png" class="Stars">
+        <div class="shootingS">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section class="Home" id="home">
+        <div class="content">
+            <div class="BG"></div>
+            <img src="img/Mercury.png">
+            <div class="Thome">
+                <div><h1 class="Tgreet">Greetings,</h1></div><br>
+                <div><h1 class="TNN">I'm <NickName data-text="Max">Max</NickName></h1></div><br>
+                <div><p class="Tint">Hi, My name is Phonvarit Watthanahemmarat,<br>I want to major in computer engineering.</p></div>
+            </div>
+            <ul>
+                <li><a href="https://www.instagram.com/madmax16_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/phonvarit" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.twitch.tv/madmax_168" target="_blank"><i class="fa fa-twitch"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCewzQ3JUKWQeN1jhdjCyDXw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+            <button><a href="Profile.html">ABOUT ME</a></button>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("load",() => {
+            document.querySelector(".Loader").classList.add("Loader--hidden")
+        })
+    </script>
+</body>
+</html>

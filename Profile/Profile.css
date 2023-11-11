@@ -1,0 +1,213 @@
+body{
+    overflow: hidden;
+}
+.thumb li .Info{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+.thumb li .Edu{
+    position: absolute;
+    top: 65%;
+    left: 65%;
+}
+.thumb li .Skill{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.thumb li .Info:hover, .thumb li .Edu:hover, .thumb li .Skill:hover{
+    transform: translateY(-10px);
+}
+.thumb li img{
+    max-width: 50px;
+}
+.imgBox .img1{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17%;
+    z-index: 15;
+}
+.imgBox .img2{
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    z-index: 20;
+}
+.imgBox .Stars{
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    width: 100%;
+    z-index: 5;
+    opacity: 0.8;
+}
+.textBox1{
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    width: 300px;
+    height: 175px;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+    visibility: hidden;
+}
+.textBox2{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+    visibility: hidden;
+}
+.textBox2 .TEdu img{
+    position: relative;
+    left: 40%;
+    width: 20%;
+}
+.textBox2 .TEdu button{
+    position: absolute;
+    left: 30%;
+    width: 125px;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+}
+.textBox2 .TEdu a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.textBox3{
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    width: 300px;
+    height: 260px;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+    visibility: hidden;
+}
+.textBox3 .TSkill ul li{
+    position: relative;
+    left: 10%;
+    list-style: circle;
+    line-height: 30px;
+}
+.textBox1 .TInfo, .textBox2 .TEdu, .textBox3 .TSkill{
+    margin: 10px;
+    color: #FFFFFF;
+}
+.textBox1 .TInfo h1, .textBox2 .TEdu h1, .textBox3 .TSkill h1{
+    text-align: center;
+}
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.1),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.1),
+    0px 0px 0px 6px rgba(255, 255, 255, 0.5);
+    animation: SStars 2s linear infinite;
+}
+span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes SStars{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-750px);
+        opacity: 0;
+    }
+}
+span:nth-child(1){
+    top: 0;
+    right: 0;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+span:nth-child(2){
+    top: 0px;
+    right: 80px;
+    left: initial;
+    animation-delay: -0.2s;
+    animation-duration: 3s;
+}
+span:nth-child(3){
+    top: 80px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+span:nth-child(4){
+    top: 0px;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+span:nth-child(5){
+    top: 0px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+span:nth-child(6){
+    top: 0px;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+span:nth-child(8){
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+span:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+span:nth-child(10){
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}

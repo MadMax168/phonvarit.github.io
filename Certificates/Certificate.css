@@ -1,0 +1,47 @@
+.Cert .text{
+    font-size: 50px;
+    color: #1c1c1c;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slider{
+    height: 250px;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+    top: -750vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide-track{
+    height: 100;
+    animation: scroll 27s linear infinite;
+}
+.slide-track:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(calc(1200px * 4));
+    }
+}
+.slide{
+    height: 450px;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    perspective: 125px;
+}
+img{
+    width: 100%;
+    transition: transform 1s;
+}
+img:hover{
+    transform: translateZ(30px);
+}

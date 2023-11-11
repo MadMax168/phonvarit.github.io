@@ -1,0 +1,57 @@
+.imgActBox1, .imgActBox2{
+    position: absolute;
+    top: 12%;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+}
+.imgActBox3, .imgActBox4{
+    position: absolute;
+    top: 65%;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+}
+.imgActBox2, .imgActBox3{
+    left: 10%;
+}
+.imgActBox1, .imgActBox4{
+    left: 70%;
+    transform: translateX(-30%);
+}
+.imgActBox1 img, .imgActBox3 img, .imgActBox4 img{
+    position: relative;
+    margin: 17px;
+    width: 90%;
+    border-radius: 15px;
+}
+.imgActBox2 img{
+    position: relative;
+    margin: 14px;
+    width: 375px;
+    height: 275px;
+    border-radius: 15px;
+}
+.textBox1, .textBox2, .textBox3, .textBox4{
+    position: absolute;
+    text-align: center;
+    color: #FFFFFF;
+}
+.textBox1{
+    top: 5%;
+    left: 63%;
+}
+.textBox2{
+    top: 5%;
+    left: 12%;
+}
+.textBox3{
+    top: 58%;
+    left: 10%;
+}
+.textBox4{
+    top: 58%;
+    left: 65%;
+}
